@@ -1,0 +1,42 @@
+syntax = "proto3";
+
+package io.deps.parsers;
+
+import "google/protobuf/any.proto";
+
+message Specifier {
+  string operator = 1;
+  string version = 2;
+}
+
+message Dependency {
+  string name = 1;
+  repeated Specifier specifiers = 2;
+  map<string, google.protobuf.Any> extras = 3;
+}
+
+message Environment {
+  string package_manager = 1;
+  string language = 2;
+}
+
+message ParseManifestRequest {
+  message File {
+    string name = 1;
+    string content = 2;
+  }
+  Environment env = 1;
+  repeated File files = 2;
+}
+
+message ParseManifestResponse {
+  message File {
+    string name = 1;
+    repeated Dependency dependencies = 2;
+  }
+  repeated File files = 1;
+}
+
+service ParseManifestService {
+  rpc ParseManifest(ParseManifestRequest) returns (ParseManifestResponse);
+}
