@@ -1,0 +1,13 @@
+hash: f5b304df92a0d314ed6179ee389ed18c185881b53f7af24eeec740bb21c85ae9
+updated: 2016-05-02T00:07:18.423334158+01:00
+imports:
+- name: github.com/Masterminds/glide
+  version: eb1d0fda355693bdb6eacd512df9defac0945148
+  subpackages:
+  - cfg
+  - util
+- name: github.com/Masterminds/vcs
+  version: f6cc1e9e7389eea70d925c03eea2d6f8670f5109
+- name: gopkg.in/yaml.v2
+  version: a83829b6f1293c91addabc89d0571c246397bbf4
+devImports: []

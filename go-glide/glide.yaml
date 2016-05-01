@@ -1,0 +1,5 @@
+package: github.com/depsio/parsers/go-glide
+import:
+- package: github.com/Masterminds/glide
+  subpackages:
+  - cfg
