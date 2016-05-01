@@ -1,0 +1,9 @@
+parsers:
+  go-glide:
+    - language: go
+      package_manager: glide
+      docker_image: depsio/parser-go-glide
+  python-pip:
+    - language: python
+      package_manager: pip
+      docker_image: depsio/parser-python-pip
