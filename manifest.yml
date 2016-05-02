@@ -3,6 +3,10 @@ parsers:
     - language: go
       package_manager: glide
       docker_image: depsio/parser-go-glide
+  go-glidelock:
+    - language: go
+      package_manager: glidelock
+      docker_image: depsio/parser-go-glidelock
   python-pip:
     - language: python
       package_manager: pip

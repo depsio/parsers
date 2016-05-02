@@ -1,0 +1,5 @@
+package: github.com/depsio/parsers/go-glidelock
+import:
+- package: github.com/Masterminds/glide
+  subpackages:
+  - cfg
