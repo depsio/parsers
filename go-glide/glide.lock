@@ -1,5 +1,5 @@
 hash: f5b304df92a0d314ed6179ee389ed18c185881b53f7af24eeec740bb21c85ae9
-updated: 2016-05-02T00:07:18.423334158+01:00
+updated: 2016-05-02T00:46:16.134912762+01:00
 imports:
 - name: github.com/Masterminds/glide
   version: eb1d0fda355693bdb6eacd512df9defac0945148
